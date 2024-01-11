@@ -1,13 +1,13 @@
 version: '3.8'
 services:
   frontend:
-    image: awsomz/devops-project-frontend:latest-frontend
+    image: awsomz/devops-project-frontend:${TAG:-latest}
     ports:
-      - "3000:3000" 
+      - "3000:3000"
     depends_on:
       - backend
 
   backend:
-    image: awsomz/devops-project-backend:latest-backend
+    image: awsomz/devops-project-backend:${TAG:-latest}
     ports:
-      - "3005:3005" 
+      - "3005:3005"
