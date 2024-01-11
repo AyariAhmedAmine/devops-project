@@ -78,7 +78,7 @@ app.patch("/contacts/:id", async (req, res) => {
     res.status(500).send(error);
   }
 });
-
+//test
 app.delete("/contacts/:id", async (req, res) => {
   try {
     const contact = await Contact.findByIdAndDelete(req.params.id);
