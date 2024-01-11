@@ -21,7 +21,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Définition du modèle de contact
-//Commentaire pour le push du code
 const ContactSchema = new mongoose.Schema({
   name: String,
   lastName: String,
